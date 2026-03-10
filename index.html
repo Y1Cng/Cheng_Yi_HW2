@@ -2,51 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOP Counter - Doc Draft</title>
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOP Counter - Doc Draft</title>
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="section">
-        <h1>OOP Counter with State-Driven UI</h1>
-        <p>Draft documentation (Week 9 stage)</p>
-    </header>
+  <header class="section">
+    <h1>OOP Counter with State-Driven UI</h1>
+    <p>Draft documentation (Week 9 stage)</p>
+  </header>
 
-    <section class="section overview">
-        <h2>Overview</h2>
-        <p>The Counter class manages numeric counts with state-driven UI updates. StepCounter extends it with step-based
-            changes.</p>
-    </section>
+  <section class="section overview">
+    <h2>Overview</h2>
+    <p>The Counter class manages numeric counts with state-driven UI updates. StepCounter extends it with step-based
+      changes.</p>
+  </section>
 
-    <section class="section how-to-use">
-        <h2>How To Use</h2>
-        <h3>HTML Containers</h3>
-        <pre><code>&lt;div id="counter-default" class="counter"&gt;&lt;/div&gt;
+  <section class="section how-to-use">
+    <h2>How To Use</h2>
+    <h3>HTML Containers</h3>
+    <pre><code>&lt;div id="counter-default" class="counter"&gt;&lt;/div&gt;
 &lt;div id="counter-custom" class="counter"&gt;&lt;/div&gt;
 &lt;div id="counter-step" class="counter"&gt;&lt;/div&gt;</code></pre>
 
-        <h3>Instantiation</h3>
-        <pre><code>import { Counter } from './js/counter.js';
+    <h3>Instantiation</h3>
+    <pre><code>import { Counter } from './js/counter.js';
 import { StepCounter } from './js/StepCounter.js';
 
 new Counter('#counter-default');
 new Counter('#counter-custom', 5);
 new StepCounter('#counter-step', 10, 5);</code></pre>
-    </section>
+  </section>
 
-    <section class="section">
-        <h2>Live Demo</h2>
-        <div class="live-demo">
-            <div id="counter-default" class="counter"></div>
-            <div id="counter-custom" class="counter"></div>
-            <div id="counter-step" class="counter"></div>
-        </div>
-    </section>
+  <section class="section">
+    <h2>Live Demo</h2>
+    <div class="live-demo">
+      <div id="counter-default" class="counter"></div>
+      <div id="counter-custom" class="counter"></div>
+      <div id="counter-step" class="counter"></div>
+    </div>
+  </section>
 
-    <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
